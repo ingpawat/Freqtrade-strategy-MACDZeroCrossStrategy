@@ -1,0 +1,1 @@
+# Freqtrade-strategy-MACDZeroCrossStrategy
