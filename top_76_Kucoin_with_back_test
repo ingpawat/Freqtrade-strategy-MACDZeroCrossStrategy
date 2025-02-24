@@ -1,0 +1,92 @@
+#top 76 coins 
+# Backtested 2018-01-29 00:00:00 -> 2025-02-23 00:00:00 | Max open trades : 75
+                                                              STRATEGY SUMMARY                                                               
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┓
+┃                    ┃        ┃              ┃                 ┃              ┃                   ┃    Win  Draw  Loss ┃                    ┃
+┃           Strategy ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃      Avg Duration ┃               Win% ┃           Drawdown ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━┩
+│ MACDZeroCrossStra… │   1382 │        21.42 │        6504.999 │        650.5 │ 27 days, 22:56:00 │    462     0   920 │      1098.548 USDT │
+│                    │        │              │                 │              │                   │               33.4 │             17.18% │
+└────────────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────┴────────────────────┘
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+ "pair_whitelist": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "XRP/USDT",
+    "BNB/USDT",
+    "SOL/USDT",
+    "DOGE/USDT",
+    "ADA/USDT",
+    "TRX/USDT",
+    "WBTC/USDT",
+    "LINK/USDT",
+    "AVAX/USDT",
+    "SUI/USDT",
+    "XLM/USDT",
+    "SHIB/USDT",
+    "TON/USDT",
+    "LTC/USDT",
+    "HBAR/USDT",
+    "DOT/USDT",
+    "UNI/USDT",
+    "BCH/USDT",
+    "OM/USDT",
+    "ONDO/USDT",
+    "XMR/USDT",
+    "PEPE/USDT",
+    "NEAR/USDT",
+    "AAVE/USDT",
+    "APT/USDT",
+    "MNT/USDT",
+    "ICP/USDT",
+    "FET/USDT",
+    "ETC/USDT",
+    "TRUMP/USDT",
+    "MATIC/USDT",
+    "VET/USDT",
+    "POL/USDT",
+    "KAS/USDT",
+    "CRO/USDT",
+    "ALGO/USDT",
+    "RENDER/USDT",
+    "FIL/USDT",
+    "ARB/USDT",
+    "ATOM/USDT",
+    "DEXE/USDT",
+    "RAY/USDT",
+    "OP/USDT",
+    "STX/USDT",
+    "IMX/USDT",
+    "S/USDT",
+    "ENA/USDT",
+    "BONK/USDT",
+    "THETA/USDT",
+    "GRT/USDT",
+    "MOVE/USDT",
+    "QNT/USDT",
+    "BRETT/USDT",
+    "FLR/USDT",
+    "INJ/USDT",
+    "MELANIA/USDT",
+    "JASMY/USDT",
+    "SEI/USDT",
+    "SAND/USDT",
+    "ENS/USDT",
+    "XTZ/USDT",
+    "FLOKI/USDT",
+    "MKR/USDT",
+    "BTT/USDT",
+    "VIRTUAL/USDT",
+    "IOTA/USDT",
+    "FLOW/USDT",
+    "CRV/USDT",
+    "SPX/USDT",
+    "AKT/USDT",
+    "TEL/USDT",
+    "SUPER/USDT",
+    "EGLD/USDT",
+    "MANA/USDT"
+]
+  
