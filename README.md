@@ -12,7 +12,7 @@
 This document provides a summary of the performance of the MACDZeroCrossStrategy.py across different time frames.
 
 ## Pairing List
-- [Pairing List KuCoin](https://github.com/ingpawat/Freqtrade-strategy-MACDZeroCrossStrategy/blob/main/exchange-and-pair_whitelist.json)
+- Main pairing list using on current back test:[Pairing List KuCoin](https://github.com/ingpawat/Freqtrade-strategy-MACDZeroCrossStrategy/blob/main/exchange-and-pair_whitelist.json)
 - Alter native list: [Top 76 high performance coins](https://github.com/ingpawat/Freqtrade-strategy-MACDZeroCrossStrategy/blob/main/top_76_Kucoin_with_back_test.json)
 
 ## Strategy Performance Across Different Time Frames with initial capital 1,000 USDT
