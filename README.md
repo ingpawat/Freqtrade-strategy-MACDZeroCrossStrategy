@@ -1,56 +1,32 @@
-# MACD Zero-Cross Strategy Backtest Report (2018-2025)
+# GoldHedgeZeroMACD
 
-## ⚠️ Disclaimer
-**Past performance does not guarantee future results.** This report is based on historical data and simulated trading. Market conditions can change, and results may vary.
+**Free to use** (personal & commercial). No performance claims. Not financial advice.
 
----
+## What it is
 
-## 📊 Backtesting Summary
-# Strategy Summary for MACDZeroCrossStrategy.py
+* **Trend-following futures strategy (isolated).**
+* **Entries/Exits:** MACD **zero-cross** on **1D**.
+* **Dynamic leverage:** Increases when the **Pearson correlation** of recent daily returns between the traded coin and **PAXG/USDT (Spot 1D)** is **negative** (gold underperforming vs crypto). Otherwise uses 1x.
+* **PAXG is reference only** (not traded).
+* Works well with a universe like: **BTC, ETH, SOL, XRP, BNB, DOGE, TRX, ADA**.
 
-## Introduction
-This document provides a summary of the performance of the MACDZeroCrossStrategy.py across different time frames.
+### Key knobs
 
-## Pairing List
-- Main pairing list using on current back test:[Pairing List KuCoin](https://github.com/ingpawat/Freqtrade-strategy-MACDZeroCrossStrategy/blob/main/exchange-and-pair_whitelist.json)
-- Alter native list: [Top 76 high performance coins](https://github.com/ingpawat/Freqtrade-strategy-MACDZeroCrossStrategy/blob/main/top_76_Kucoin_with_back_test.json)
-
-## Strategy Performance Across Different Time Frames with initial capital 1,000 USDT
-
-### 6H Summary
-| Strategy          | Trades | Avg Profit % | Tot Profit USDT | Tot Profit % | Avg Duration       | Loss | Win % | Drawdown USDT | Drawdown % |
-|-------------------|--------|--------------|-----------------|--------------|--------------------|-------|-------|---------------|------------|
-| MACDZeroCross     | 2611   | 4.09         | 1625.506        | 162.55       | 6 days, 23:31:00   | 730   | 28.0  | 218.771       | 7.73       |
-
-### 8H Summary
-| Strategy          | Trades | Avg Profit % | Tot Profit USDT | Tot Profit % | Avg Duration       | Loss | Win % | Drawdown USDT | Drawdown % |
-|-------------------|--------|--------------|-----------------|--------------|--------------------|-------|-------|---------------|------------|
-| MACDZeroCross     | 1904   | 5.62         | 1630.066        | 163.01       | 9 days, 10:12:00   | 542   | 28.5  | 185.794       | 9.68       |
-
-### 12H Summary
-| Strategy          | Trades | Avg Profit % | Tot Profit USDT | Tot Profit % | Avg Duration       | Loss | Win % | Drawdown USDT | Drawdown % |
-|-------------------|--------|--------------|-----------------|--------------|--------------------|-------|-------|---------------|------------|
-| MACDZeroCross     | 1221   | 10.20        | 1961.400        | 196.14       | 14 days, 8:38:00  | 366   | 30.0  | 210.123       | 9.94       |
-
-### 1D Summary
-| Strategy          | Trades | Avg Profit % | Tot Profit USDT | Tot Profit % | Avg Duration       | Loss | Win % | Drawdown USDT | Drawdown % |
-|-------------------|--------|--------------|-----------------|--------------|--------------------|-------|-------|---------------|------------|
-| MACDZeroCross     | 551    | 25.80        | 2187.793        | 218.78       | 30 days, 13:17:00 | 196   | 35.6  | 267.184       | 8.37       |
-
-### 1W Summary
-| Strategy          | Trades | Avg Profit % | Tot Profit USDT | Tot Profit % | Avg Duration       | Loss | Win % | Drawdown USDT | Drawdown % |
-|-------------------|--------|--------------|-----------------|--------------|--------------------|-------|-------|---------------|------------|
-| MACDZeroCross     | 75     | 67.98        | 528.294         | 52.83        | 161 days, 6:43:00 | 26    | 34.7  | 78.611        | 5.34       |
-
-## Conclusion
-The MACDZeroCrossStrategy.py demonstrates varying performance across different time frames, with the 1D time frame yielding the highest total profit in USDT. The strategy's effectiveness is evident in its ability to maintain a positive profit margin across all time frames, though the drawdown percentages indicate potential risks associated with each time frame.
-
-## Future Improvements
-- **Risk Management**: Implement more sophisticated risk management techniques to reduce drawdowns.
-- **Strategy Optimization**: Consider optimizing the strategy parameters for each time frame to enhance performance.
-- **Diversification**: Explore diversifying the strategy across multiple assets to mitigate risk and increase potential returns.
-
+`CC_LEN` (window, e.g. 20–30), `cc_thresh` (e.g. -0.10), `lev_max`, `lev_gamma`.
+Recommended safety: `stoploss_on_exchange`, liquidation buffer, **ATR-based leverage cap**, reasonable `max_open_trades`.
 
 ---
 
+## Also included: MACDZeroCrossStrategy
 
+A **simpler baseline**: MACD zero-cross **without** correlation-based leverage.
+Good when you want:
+
+* a non-levered/spot-friendly reference,
+* a clean benchmark to compare against GoldHedgeZeroMACD on the same pairs/timeframe.
+
+---
+
+## License
+
+Free to use. If you want a formal license, add **MIT** or **Apache-2.0** to your repo.

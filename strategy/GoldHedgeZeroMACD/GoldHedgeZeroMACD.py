@@ -13,7 +13,7 @@ from freqtrade.strategy import IntParameter, DecimalParameter
 logger = logging.getLogger(__name__)
 
 
-class MacdZeroDual50(IStrategy):
+class GoldHedgeZeroMACD(IStrategy):
     """
     MACD Zero Cross Strategy with Dynamic Leverage
     

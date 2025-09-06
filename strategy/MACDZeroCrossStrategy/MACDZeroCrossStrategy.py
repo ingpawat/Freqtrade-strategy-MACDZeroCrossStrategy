@@ -4,31 +4,6 @@ import talib.abstract as ta
 import freqtrade.vendor.qtpylib.indicators as qtpylib
 
 class MACDZeroCrossStrategy(IStrategy):
-    """
-    MACD Zero Cross Strategy
-
-    Description:
-    This strategy generates trading signals based on the MACD (Moving Average Convergence Divergence) 
-    indicator crossing the zero line. 
-
-    - A **buy signal** is triggered when the MACD crosses **above** zero.
-    - A **sell signal** is triggered when the MACD crosses **below** zero.
-
-    Usage Instructions:
-
-    1. **Download historical data**  
-       Run the following command to fetch the required market data:
-       ```
-       docker-compose run --rm freqtrade download-data --timeframes 1d --prepend --timerange 20100301-20250223 
-       ```
-
-    2. **Run a backtest**  
-       Execute the following command to test the strategy on historical data:
-       ```
-       docker-compose run --rm freqtrade backtesting --strategy MACDZeroCrossStrategy --dry-run-wallet 100 --fee 0.001 --config user_data/config.json
-       ```
-
-    """
 
     # Use a 1-day timeframe
     timeframe = '1d'
